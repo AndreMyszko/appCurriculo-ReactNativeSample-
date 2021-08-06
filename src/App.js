@@ -11,10 +11,12 @@ const App = () => {
           <Image source={foto} style={style.foto} />
           <Text style={style.nome}>André Myszko</Text>
           <Text style={style.funcao}>Software Developer</Text>
-        </View>
-        <View>
-          <Icon name="github" size={25} />
-          <Icon name="linkedin" size={25} />
+          <View style={style.redes_sociais}>
+            <Icon name="github" size={25} />
+            <Icon name="linkedin" size={25} />
+            <Icon name="youtube" size={25} />
+            <Icon name="instagram" size={25} />
+          </View>
         </View>
       </View>
     </>
@@ -35,6 +37,8 @@ const style = StyleSheet.create({
     width: 150,
     height: 250,
     borderRadius: 125,
+    borderWidth: 3,
+    borderColor: '#000000',
   },
   nome: {
     fontSize: 26,
@@ -44,6 +48,12 @@ const style = StyleSheet.create({
   funcao: {
     color: '#939393',
     marginBottom: 10,
+  },
+  redes_sociais: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '40%',
+    marginTop: 20,
   },
 });
 
