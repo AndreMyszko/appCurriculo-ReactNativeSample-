@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
+import Icon from 'react-native-vector-icons/Feather';
 import foto from './assets/reducedMe.png';
 
 const App = () => {
@@ -10,6 +11,10 @@ const App = () => {
           <Image source={foto} style={style.foto} />
           <Text style={style.nome}>André Myszko</Text>
           <Text style={style.funcao}>Software Developer</Text>
+        </View>
+        <View>
+          <Icon name="github" size={25} />
+          <Icon name="linkedin" size={25} />
         </View>
       </View>
     </>
