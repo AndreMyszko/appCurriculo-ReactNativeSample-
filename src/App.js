@@ -99,7 +99,7 @@ const style = StyleSheet.create({
     marginTop: 5,
   },
   funcao: {
-    color: '#939393',
+    color: '#000000',
     marginBottom: 10,
   },
   redes_sociais: {
@@ -107,6 +107,12 @@ const style = StyleSheet.create({
     justifyContent: 'space-between',
     width: '40%',
     marginTop: 20,
+    borderRadius: 25,
+    borderWidth: 1,
+    padding: 5,
+    paddingHorizontal: 10,
+    borderColor: '#000000',
+    backgroundColor: '#FFFFFF',
   },
   card: {
     width: '80%',
